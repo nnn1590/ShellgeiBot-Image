@@ -1,4 +1,4 @@
-.PHENY: build prefetch
+.PHONY: build prefetch
 
 DOCKER_IMAGE_NAME := theoldmoon0602/shellgeibot
 NODE_VERSION := $(shell curl -s https://nodejs.org/dist/index.json | jq -r '[.[]|select(.lts)][0].version')
